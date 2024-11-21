@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    SYSTEM - PHP Framework &raquo; \ScssPhp\ScssPhp\Value\SassMap
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+    <base href="../">
+
+            <link href="css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/template.js" type="text/javascript"></script>
+        <script src="js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="index.html">SYSTEM - PHP Framework</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="\LIB">LIB</a></li>
+                                                                        <li><a href="\GIT">GIT</a></li>
+                                                                        <li><a href="\vakata">vakata</a></li>
+                                                                        <li><a href="\Michelf">Michelf</a></li>
+                                                                        <li><a href="\MatthiasMullie">MatthiasMullie</a></li>
+                                                                        <li><a href="\PHPDocMD">PHPDocMD</a></li>
+                                                                        <li><a href="\ScssPhp">ScssPhp</a></li>
+                                                                        <li><a href="\SYSTEM">SYSTEM</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                                                                            <li class="method public inherited">
+        <a href="#method___toString" title="__toString :: Returns a Sass representation of $this.">
+            <span class="description">Returns a Sass representation of $this.</span><pre>__toString</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_accept" title="accept :: ">
+            <span class="description"></span><pre>accept</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_asList" title="asList :: This value as a list.">
+            <span class="description">This value as a list.</span><pre>asList</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_assertBoolean" title="assertBoolean :: Throws a {@see SassScriptException} if $this isn&#039;t a boolean.">
+            <span class="description">Throws a {@see SassScriptException} if $this isn&#039;t a boolean.</span><pre>assertBoolean</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_assertCalculation" title="assertCalculation :: Throws a {@see SassScriptException} if $this isn&#039;t a calculation.">
+            <span class="description">Throws a {@see SassScriptException} if $this isn&#039;t a calculation.</span><pre>assertCalculation</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_assertColor" title="assertColor :: Throws a {@see SassScriptException} if $this isn&#039;t a color.">
+            <span class="description">Throws a {@see SassScriptException} if $this isn&#039;t a color.</span><pre>assertColor</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_assertFunction" title="assertFunction :: Throws a {@see SassScriptException} if $this isn&#039;t a string.">
+            <span class="description">Throws a {@see SassScriptException} if $this isn&#039;t a string.</span><pre>assertFunction</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_assertMap" title="assertMap :: Throws a {@see SassScriptException} if $this isn&#039;t a map.">
+            <span class="description">Throws a {@see SassScriptException} if $this isn&#039;t a map.</span><pre>assertMap</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_assertNumber" title="assertNumber :: Throws a {@see SassScriptException} if $this isn&#039;t a number.">
+            <span class="description">Throws a {@see SassScriptException} if $this isn&#039;t a number.</span><pre>assertNumber</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_assertString" title="assertString :: Throws a {@see SassScriptException} if $this isn&#039;t a string.">
+            <span class="description">Throws a {@see SassScriptException} if $this isn&#039;t a string.</span><pre>assertString</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_create" title="create :: ">
+            <span class="description"></span><pre>create</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_createEmpty" title="createEmpty :: ">
+            <span class="description"></span><pre>createEmpty</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_equals" title="equals :: ">
+            <span class="description"></span><pre>equals</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getContents" title="getContents :: The returned Map is unmodifiable.">
+            <span class="description">The returned Map is unmodifiable.</span><pre>getContents</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_getSeparator" title="getSeparator :: The separator for this value as a list.">
+            <span class="description">The separator for this value as a list.</span><pre>getSeparator</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_hasBrackets" title="hasBrackets :: Whether this value as a list has brackets.">
+            <span class="description">Whether this value as a list has brackets.</span><pre>hasBrackets</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_isTruthy" title="isTruthy :: Whether the value counts as `true` in an `@if` statement and other contexts">
+            <span class="description">Whether the value counts as `true` in an `@if` statement and other contexts</span><pre>isTruthy</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_sassIndexToListIndex" title="sassIndexToListIndex :: Converts $sassIndex into a PHP-style index into the list returned by
+{@see asList}.">
+            <span class="description">Converts $sassIndex into a PHP-style index into the list returned by
+{@see asList}.</span><pre>sassIndexToListIndex</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                        <li class="method public inherited">
+        <a href="#method_toCssString" title="toCssString :: Returns a valid CSS representation of $this.">
+            <span class="description">Returns a valid CSS representation of $this.</span><pre>toCssString</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_tryMap" title="tryMap :: Return $this as a SassMap if it is one (including empty lists) or null otherwise.">
+            <span class="description">Return $this as a SassMap if it is one (including empty lists) or null otherwise.</span><pre>tryMap</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_withListContents" title="withListContents :: Returns a new list containing $contents that defaults to this value&#039;s
+separator and brackets.">
+            <span class="description">Returns a new list containing $contents that defaults to this value&#039;s
+separator and brackets.</span><pre>withListContents</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected">
+                            <a href="#method_getLengthAsList" title="getLengthAsList :: The length of {@see asList}.">
+                                <span class="description">The length of {@see asList}.</span><pre>getLengthAsList</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                            <li class="method private">
+                            <a href="#method___construct" title="__construct :: ">
+                                <span class="description"></span><pre>__construct</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method private inherited">
+                            <a href="#method_selectorString" title="selectorString :: Converts a `selector-parse()`-style input into a string that can be
+parsed.">
+                                <span class="description">Converts a `selector-parse()`-style input into a string that can be
+parsed.</span><pre>selectorString</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_selectorStringOrNull" title="selectorStringOrNull :: Converts a `selector-parse()`-style input into a string that can be
+parsed.">
+                                <span class="description">Converts a `selector-parse()`-style input into a string that can be
+parsed.</span><pre>selectorStringOrNull</pre>
+                            </a>
+                        </li>
+                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>SassMap</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="classes/ScssPhp-ScssPhp-Value-Value.html"><abbr title="\ScssPhp\ScssPhp\Value\Value">Value</abbr></a>
+                                                        </small>
+                <p class="short_description">A SassScript map.</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Application</p>
+
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method private  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>__construct</h2>
+                            <pre>__construct(\ScssPhp\ScssPhp\Collection\Map&lt;\ScssPhp\ScssPhp\Value\Value&gt;contents) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>contents</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Collection\Map<\ScssPhp\ScssPhp\Value\Value></code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method___toString"></a>
+                        <div class="element clickable method public  method___toString inherited" data-toggle="collapse" data-target=".method___toString .collapse">
+                            <h2>Returns a Sass representation of $this.</h2>
+                            <pre>__toString() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                <span class="label">final</span>                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Note that this is equivalent to calling <code class="prettyprint">inspect()</code> on the value, and thus
+won't reflect the user's output settings. {@see \ScssPhp\ScssPhp\Value\toCssString} should be used
+instead to convert $this to CSS.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_accept"></a>
+                        <div class="element clickable method public  method_accept" data-toggle="collapse" data-target=".method_accept .collapse">
+                            <h2>accept</h2>
+                            <pre>accept(\ScssPhp\ScssPhp\Visitor\ValueVisitorvisitor) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>visitor</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Visitor\ValueVisitor</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_asList"></a>
+                        <div class="element clickable method public  method_asList" data-toggle="collapse" data-target=".method_asList .collapse">
+                            <h2>This value as a list.</h2>
+                            <pre>asList() : list&lt;\ScssPhp\ScssPhp\Value\Value&gt;</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>All SassScript values can be used as lists. Maps count as lists of pairs,
+and all other values count as single-value lists.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+list<\ScssPhp\ScssPhp\Value\Value></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_assertBoolean"></a>
+                        <div class="element clickable method public  method_assertBoolean inherited" data-toggle="collapse" data-target=".method_assertBoolean .collapse">
+                            <h2>Throws a {@see SassScriptException} if $this isn&#039;t a boolean.</h2>
+                            <pre>assertBoolean(?stringname = null) : \ScssPhp\ScssPhp\Value\SassBoolean</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Note that generally, functions should use {@see \ScssPhp\ScssPhp\Value\isTruthy} rather than requiring
+a literal boolean.</p>
+<p>If this came from a function argument, $name is the argument name
+(without the <code class="prettyprint">$</code>). It's used for error reporting.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassBoolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_assertCalculation"></a>
+                        <div class="element clickable method public  method_assertCalculation inherited" data-toggle="collapse" data-target=".method_assertCalculation .collapse">
+                            <h2>Throws a {@see SassScriptException} if $this isn&#039;t a calculation.</h2>
+                            <pre>assertCalculation(?stringname = null) : \ScssPhp\ScssPhp\Value\SassCalculation</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If this came from a function argument, $name is the argument name
+(without the <code class="prettyprint">$</code>). It's used for error reporting.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassCalculation</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_assertColor"></a>
+                        <div class="element clickable method public  method_assertColor inherited" data-toggle="collapse" data-target=".method_assertColor .collapse">
+                            <h2>Throws a {@see SassScriptException} if $this isn&#039;t a color.</h2>
+                            <pre>assertColor(?stringname = null) : \ScssPhp\ScssPhp\Value\SassColor</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If this came from a function argument, $name is the argument name
+(without the <code class="prettyprint">$</code>). It's used for error reporting.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassColor</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_assertFunction"></a>
+                        <div class="element clickable method public  method_assertFunction inherited" data-toggle="collapse" data-target=".method_assertFunction .collapse">
+                            <h2>Throws a {@see SassScriptException} if $this isn&#039;t a string.</h2>
+                            <pre>assertFunction(?stringname = null) : \ScssPhp\ScssPhp\Value\SassFunction</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If this came from a function argument, $name is the argument name
+(without the <code class="prettyprint">$</code>). It's used for error reporting.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassFunction</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_assertMap"></a>
+                        <div class="element clickable method public  method_assertMap" data-toggle="collapse" data-target=".method_assertMap .collapse">
+                            <h2>Throws a {@see SassScriptException} if $this isn&#039;t a map.</h2>
+                            <pre>assertMap(?stringname = null) : \ScssPhp\ScssPhp\Value\SassMap</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If this came from a function argument, $name is the argument name
+(without the <code class="prettyprint">$</code>). It's used for error reporting.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassMap</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_assertNumber"></a>
+                        <div class="element clickable method public  method_assertNumber inherited" data-toggle="collapse" data-target=".method_assertNumber .collapse">
+                            <h2>Throws a {@see SassScriptException} if $this isn&#039;t a number.</h2>
+                            <pre>assertNumber(?stringname = null) : \ScssPhp\ScssPhp\Value\SassNumber</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If this came from a function argument, $name is the argument name
+(without the <code class="prettyprint">$</code>). It's used for error reporting.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassNumber</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_assertString"></a>
+                        <div class="element clickable method public  method_assertString inherited" data-toggle="collapse" data-target=".method_assertString .collapse">
+                            <h2>Throws a {@see SassScriptException} if $this isn&#039;t a string.</h2>
+                            <pre>assertString(?stringname = null) : \ScssPhp\ScssPhp\Value\SassString</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If this came from a function argument, $name is the argument name
+(without the <code class="prettyprint">$</code>). It's used for error reporting.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassString</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_create"></a>
+                        <div class="element clickable method public  method_create" data-toggle="collapse" data-target=".method_create .collapse">
+                            <h2>create</h2>
+                            <pre>create(\ScssPhp\ScssPhp\Collection\Map&lt;\ScssPhp\ScssPhp\Value\Value&gt;contents) : \ScssPhp\ScssPhp\Value\SassMap</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>contents</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Collection\Map<\ScssPhp\ScssPhp\Value\Value></code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassMap</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_createEmpty"></a>
+                        <div class="element clickable method public  method_createEmpty" data-toggle="collapse" data-target=".method_createEmpty .collapse">
+                            <h2>createEmpty</h2>
+                            <pre>createEmpty() : \ScssPhp\ScssPhp\Value\SassMap</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassMap</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_equals"></a>
+                        <div class="element clickable method public  method_equals" data-toggle="collapse" data-target=".method_equals .collapse">
+                            <h2>equals</h2>
+                            <pre>equals(objectother) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>other</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+object</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+bool</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getContents"></a>
+                        <div class="element clickable method public  method_getContents" data-toggle="collapse" data-target=".method_getContents .collapse">
+                            <h2>The returned Map is unmodifiable.</h2>
+                            <pre>getContents() : \ScssPhp\ScssPhp\Collection\Map&lt;\ScssPhp\ScssPhp\Value\Value&gt;</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Collection\Map<\ScssPhp\ScssPhp\Value\Value></code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getLengthAsList"></a>
+                        <div class="element clickable method protected  method_getLengthAsList" data-toggle="collapse" data-target=".method_getLengthAsList .collapse">
+                            <h2>The length of {@see asList}.</h2>
+                            <pre>getLengthAsList() : int</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This is used to compute {@see \ScssPhp\ScssPhp\Value\sassIndexToListIndex} without allocating a new
+list.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+int</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getSeparator"></a>
+                        <div class="element clickable method public  method_getSeparator" data-toggle="collapse" data-target=".method_getSeparator .collapse">
+                            <h2>The separator for this value as a list.</h2>
+                            <pre>getSeparator() : \ScssPhp\ScssPhp\Value\ListSeparator</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>All SassScript values can be used as lists. Maps count as lists of pairs,
+and all other values count as single-value lists.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\ListSeparator</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_hasBrackets"></a>
+                        <div class="element clickable method public  method_hasBrackets inherited" data-toggle="collapse" data-target=".method_hasBrackets .collapse">
+                            <h2>Whether this value as a list has brackets.</h2>
+                            <pre>hasBrackets() : bool</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>All SassScript values can be used as lists. Maps count as lists of pairs,
+and all other values count as single-value lists.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+bool</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_isTruthy"></a>
+                        <div class="element clickable method public  method_isTruthy inherited" data-toggle="collapse" data-target=".method_isTruthy .collapse">
+                            <h2>Whether the value counts as `true` in an `@if` statement and other contexts</h2>
+                            <pre>isTruthy() : bool</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+bool</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sassIndexToListIndex"></a>
+                        <div class="element clickable method public  method_sassIndexToListIndex inherited" data-toggle="collapse" data-target=".method_sassIndexToListIndex .collapse">
+                            <h2>Converts $sassIndex into a PHP-style index into the list returned by
+{@see asList}.</h2>
+                            <pre>sassIndexToListIndex(\ScssPhp\ScssPhp\Value\ValuesassIndex, ?stringname = null) : int</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Sass indexes are one-based, while PHP indexes are zero-based. Sass
+indexes may also be negative in order to index from the end of the list.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd><p>if $sassIndex isn't a number, if that
+number isn't an integer, or if that integer isn't a valid index for
+{@see \ScssPhp\ScssPhp\Value\asList}. If $sassIndex came from a function argument, $name is the
+argument name (without the <code class="prettyprint">$</code>). It's used for error reporting.</p>
+</dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>sassIndex</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\Value</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+int</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_selectorString"></a>
+                        <div class="element clickable method private  method_selectorString inherited" data-toggle="collapse" data-target=".method_selectorString .collapse">
+                            <h2>Converts a `selector-parse()`-style input into a string that can be
+parsed.</h2>
+                            <pre>selectorString(?stringname) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd><p>if $this isn't a type or a structure that
+can be parsed as a selector.</p>
+</dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_selectorStringOrNull"></a>
+                        <div class="element clickable method private  method_selectorStringOrNull inherited" data-toggle="collapse" data-target=".method_selectorStringOrNull .collapse">
+                            <h2>Converts a `selector-parse()`-style input into a string that can be
+parsed.</h2>
+                            <pre>selectorStringOrNull() : ?string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns <code class="prettyprint">null</code> if $this isn't a type or a structure that can be parsed as
+a selector.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_toCssString"></a>
+                        <div class="element clickable method public  method_toCssString inherited" data-toggle="collapse" data-target=".method_toCssString .collapse">
+                            <h2>Returns a valid CSS representation of $this.</h2>
+                            <pre>toCssString(boolquote = true) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                <span class="label">final</span>                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Use {@see \ScssPhp\ScssPhp\Value\toString} instead to get a string representation even if this
+isn't valid CSS.</p>
+<p>Internal-only: If $quote is <code class="prettyprint">false</code>, quoted strings are emitted without
+quotes.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Exception\SassScriptException</dt>
+                                                        <dd><p>if $this cannot be represented in plain CSS.</p>
+</dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>quote</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+bool</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_tryMap"></a>
+                        <div class="element clickable method public  method_tryMap" data-toggle="collapse" data-target=".method_tryMap .collapse">
+                            <h2>Return $this as a SassMap if it is one (including empty lists) or null otherwise.</h2>
+                            <pre>tryMap() : ?\ScssPhp\ScssPhp\Value\SassMap</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?\ScssPhp\ScssPhp\Value\SassMap</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_withListContents"></a>
+                        <div class="element clickable method public  method_withListContents inherited" data-toggle="collapse" data-target=".method_withListContents .collapse">
+                            <h2>Returns a new list containing $contents that defaults to this value&#039;s
+separator and brackets.</h2>
+                            <pre>withListContents(list&lt;\ScssPhp\ScssPhp\Value\Value&gt;contents, ?\ScssPhp\ScssPhp\Value\ListSeparatorseparator = null, ?boolbrackets = null) : \ScssPhp\ScssPhp\Value\SassList</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>contents</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+list<\ScssPhp\ScssPhp\Value\Value></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>separator</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?\ScssPhp\ScssPhp\Value\ListSeparator</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>brackets</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+?bool</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\ScssPhp\ScssPhp\Value\SassList</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_contents"> </a>
+                            <div class="element clickable property  private property_contents" data-toggle="collapse" data-target=".property_contents .collapse">
+                                <h2></h2>
+                                <pre>contents : \ScssPhp\ScssPhp\Collection\Map&lt;\ScssPhp\ScssPhp\Value\Value&gt;</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="classes/ScssPhp-ScssPhp-Collection-Map.html"><abbr title="\ScssPhp\ScssPhp\Collection\Map">Map</abbr></a>&lt;string|int, <a href="classes/ScssPhp-ScssPhp-Value-Value.html"><abbr title="\ScssPhp\ScssPhp\Value\Value">Value</abbr></a>&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\ScssPhp\ScssPhp\Value\SassMap"></a>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="\ScssPhp\ScssPhp\Value">Value</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="\ScssPhp\ScssPhp\Value\SassMap">SassMap</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="https://getbootstrap.com/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="https://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="https://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Thu, 21 Nov 2024 01:33:24 +0000.<br/>
+    </footer>
+    </body>
+</html>

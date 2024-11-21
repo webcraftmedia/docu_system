@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    SYSTEM - PHP Framework &raquo; \MatthiasMullie\Minify\JS
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+    <base href="../">
+
+            <link href="css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/template.js" type="text/javascript"></script>
+        <script src="js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="index.html">SYSTEM - PHP Framework</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="\LIB">LIB</a></li>
+                                                                        <li><a href="\GIT">GIT</a></li>
+                                                                        <li><a href="\vakata">vakata</a></li>
+                                                                        <li><a href="\Michelf">Michelf</a></li>
+                                                                        <li><a href="\MatthiasMullie">MatthiasMullie</a></li>
+                                                                        <li><a href="\PHPDocMD">PHPDocMD</a></li>
+                                                                        <li><a href="\ScssPhp">ScssPhp</a></li>
+                                                                        <li><a href="\SYSTEM">SYSTEM</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Init the minify class - optionally, code may be passed along already.">
+            <span class="description">Init the minify class - optionally, code may be passed along already.</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_add" title="add :: Add a file or straight-up code to be minified.">
+            <span class="description">Add a file or straight-up code to be minified.</span><pre>add</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addFile" title="addFile :: Add a file to be minified.">
+            <span class="description">Add a file to be minified.</span><pre>addFile</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_cache" title="cache :: Minify the data &amp; write it to a CacheItemInterface object.">
+            <span class="description">Minify the data &amp; write it to a CacheItemInterface object.</span><pre>cache</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_execute" title="execute :: Minify the data.">
+            <span class="description">Minify the data.</span><pre>execute</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_gzip" title="gzip :: Minify &amp; gzip the data &amp; (optionally) saves it to a file.">
+            <span class="description">Minify &amp; gzip the data &amp; (optionally) saves it to a file.</span><pre>gzip</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_minify" title="minify :: Minify the data &amp; (optionally) saves it to a file.">
+            <span class="description">Minify the data &amp; (optionally) saves it to a file.</span><pre>minify</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                            <li class="method protected inherited">
+                            <a href="#method_canImportFile" title="canImportFile :: Check if the path is a regular file and can be read.">
+                                <span class="description">Check if the path is a regular file and can be read.</span><pre>canImportFile</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method protected inherited">
+                            <a href="#method_executeReplacement" title="executeReplacement :: If $replacement is a callback, execute it, passing in the match data.">
+                                <span class="description">If $replacement is a callback, execute it, passing in the match data.</span><pre>executeReplacement</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_extractRegex" title="extractRegex :: JS can have /-delimited regular expressions, like: /ab+c/.match(string).">
+                                <span class="description">JS can have /-delimited regular expressions, like: /ab+c/.match(string).</span><pre>extractRegex</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_extractStrings" title="extractStrings :: Strings are a pattern we need to match, in order to ignore potential
+code-like content inside them, but we just want all of the string
+content to remain untouched.">
+                                <span class="description">Strings are a pattern we need to match, in order to ignore potential
+code-like content inside them, but we just want all of the string
+content to remain untouched.</span><pre>extractStrings</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_getKeywordsForRegex" title="getKeywordsForRegex :: We&#039;ll strip whitespace around certain keywords with regular expressions.">
+                                <span class="description">We&#039;ll strip whitespace around certain keywords with regular expressions.</span><pre>getKeywordsForRegex</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_getOperatorsForRegex" title="getOperatorsForRegex :: We&#039;ll strip whitespace around certain operators with regular expressions.">
+                                <span class="description">We&#039;ll strip whitespace around certain operators with regular expressions.</span><pre>getOperatorsForRegex</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method protected inherited">
+                            <a href="#method_load" title="load :: Load data.">
+                                <span class="description">Load data.</span><pre>load</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method protected inherited">
+                            <a href="#method_openFileForWriting" title="openFileForWriting :: Attempts to open file specified by $path for writing.">
+                                <span class="description">Attempts to open file specified by $path for writing.</span><pre>openFileForWriting</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_propertyNotation" title="propertyNotation :: Replaces all occurrences of array[&#039;key&#039;] by array.key.">
+                                <span class="description">Replaces all occurrences of array[&#039;key&#039;] by array.key.</span><pre>propertyNotation</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_registerPattern" title="registerPattern :: Register a pattern to execute against the source content.">
+                                <span class="description">Register a pattern to execute against the source content.</span><pre>registerPattern</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_replace" title="replace :: We can&#039;t &quot;just&quot; run some regular expressions against JavaScript: it&#039;s a
+complex language. E.g. having an occurrence of // xyz would be a comment,
+unless it&#039;s used within a string. Of you could have something that looks
+like a &#039;string&#039;, but inside a comment.">
+                                <span class="description">We can&#039;t &quot;just&quot; run some regular expressions against JavaScript: it&#039;s a
+complex language. E.g. having an occurrence of // xyz would be a comment,
+unless it&#039;s used within a string. Of you could have something that looks
+like a &#039;string&#039;, but inside a comment.</span><pre>replace</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_restoreExtractedData" title="restoreExtractedData :: This method will restore all extracted data (strings, regexes) that were
+replaced with placeholder text in extract*(). The original content was
+saved in $this-&gt;extracted.">
+                                <span class="description">This method will restore all extracted data (strings, regexes) that were
+replaced with placeholder text in extract*(). The original content was
+saved in $this-&gt;extracted.</span><pre>restoreExtractedData</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_save" title="save :: Save to file.">
+                                <span class="description">Save to file.</span><pre>save</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_shortenBools" title="shortenBools :: Replaces true &amp; false by !0 and !1.">
+                                <span class="description">Replaces true &amp; false by !0 and !1.</span><pre>shortenBools</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_str_replace_first" title="str_replace_first :: ">
+                                <span class="description"></span><pre>str_replace_first</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_stripComments" title="stripComments :: Strip comments from source code.">
+                                <span class="description">Strip comments from source code.</span><pre>stripComments</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_stripMultilineComments" title="stripMultilineComments :: Both JS and CSS use the same form of multi-line comment, so putting the common code here.">
+                                <span class="description">Both JS and CSS use the same form of multi-line comment, so putting the common code here.</span><pre>stripMultilineComments</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_stripWhitespace" title="stripWhitespace :: Strip whitespace.">
+                                <span class="description">Strip whitespace.</span><pre>stripWhitespace</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_writeToFile" title="writeToFile :: Attempts to write $content to the file specified by $handler. $path is used for printing exceptions.">
+                                <span class="description">Attempts to write $content to the file specified by $handler. $path is used for printing exceptions.</span><pre>writeToFile</pre>
+                            </a>
+                        </li>
+                                                </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>JS</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="classes/MatthiasMullie-Minify-Minify.html"><abbr title="\MatthiasMullie\Minify\Minify">Minify</abbr></a>
+                                                        </small>
+                <p class="short_description">JavaScript Minifier Class.</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p>Please report bugs on https://github.com/matthiasmullie/minify/issues</p>
+
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Matthias Mullie <a href="mailto:minify@mullie.eu">minify@mullie.eu</a></p>
+
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Tijs Verkoyen <a href="mailto:minify@verkoyen.eu">minify@verkoyen.eu</a></p>
+
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        copyright
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Copyright (c) 2012, Matthias Mullie. All rights reserved</p>
+
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        license
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>MIT License</p>
+
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Application</p>
+
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Init the minify class - optionally, code may be passed along already.</h2>
+                            <pre>__construct() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_add"></a>
+                        <div class="element clickable method public  method_add inherited" data-toggle="collapse" data-target=".method_add .collapse">
+                            <h2>Add a file or straight-up code to be minified.</h2>
+                            <pre>add(string|string[]data) : static</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>data</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string|string[]</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+static</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addFile"></a>
+                        <div class="element clickable method public  method_addFile inherited" data-toggle="collapse" data-target=".method_addFile .collapse">
+                            <h2>Add a file to be minified.</h2>
+                            <pre>addFile(string|string[]data) : static</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\MatthiasMullie\Minify\Exceptions\IOException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>data</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string|string[]</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+static</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_cache"></a>
+                        <div class="element clickable method public  method_cache inherited" data-toggle="collapse" data-target=".method_cache .collapse">
+                            <h2>Minify the data &amp; write it to a CacheItemInterface object.</h2>
+                            <pre>cache(\Psr\Cache\CacheItemInterfaceitem) : \Psr\Cache\CacheItemInterface</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>item</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\Psr\Cache\CacheItemInterface</code><p><p>Cache item to write the data to</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\Psr\Cache\CacheItemInterface</code><p><p>Cache item with the minifier data</p>
+</p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_canImportFile"></a>
+                        <div class="element clickable method protected  method_canImportFile inherited" data-toggle="collapse" data-target=".method_canImportFile .collapse">
+                            <h2>Check if the path is a regular file and can be read.</h2>
+                            <pre>canImportFile(stringpath) : bool</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>path</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+bool</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_execute"></a>
+                        <div class="element clickable method public  method_execute" data-toggle="collapse" data-target=".method_execute .collapse">
+                            <h2>Minify the data.</h2>
+                            <pre>execute(mixedpath = null) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Perform JS optimizations.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>path</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The minified data</p>
+</p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_executeReplacement"></a>
+                        <div class="element clickable method protected  method_executeReplacement inherited" data-toggle="collapse" data-target=".method_executeReplacement .collapse">
+                            <h2>If $replacement is a callback, execute it, passing in the match data.</h2>
+                            <pre>executeReplacement(string|callablereplacement, arraymatch) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If it's a string, just pass it through.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>replacement</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string|callable</code><p><p>Replacement value</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>match</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+array</code><p><p>Match data, in PREG_OFFSET_CAPTURE form</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_extractRegex"></a>
+                        <div class="element clickable method protected  method_extractRegex" data-toggle="collapse" data-target=".method_extractRegex .collapse">
+                            <h2>JS can have /-delimited regular expressions, like: /ab+c/.match(string).</h2>
+                            <pre>extractRegex() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The content inside the regex can contain characters that may be confused
+for JS code: e.g. it could contain whitespace it needs to match &amp; we
+don't want to strip whitespace in there.</p>
+<p>The regex can be pretty simple: we don't have to care about comments,
+(which also use slashes) because stripComments() will have stripped those
+already.</p>
+<p>This method will replace all string content with simple REGEX#
+placeholder text, so we've rid all regular expressions from characters
+that may be misinterpreted. Original regex content will be saved in
+$this-&gt;extracted and after doing all other minifying, we can restore the
+original content via restoreRegex()</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_extractStrings"></a>
+                        <div class="element clickable method protected  method_extractStrings inherited" data-toggle="collapse" data-target=".method_extractStrings .collapse">
+                            <h2>Strings are a pattern we need to match, in order to ignore potential
+code-like content inside them, but we just want all of the string
+content to remain untouched.</h2>
+                            <pre>extractStrings(mixedchars = &#039;&#039;&quot;&#039;, mixedplaceholderPrefix = &#039;&#039;) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This method will replace all string content with simple STRING#
+placeholder text, so we've rid all strings from characters that may be
+misinterpreted. Original string content will be saved in $this-&gt;extracted
+and after doing all other minifying, we can restore the original content
+via restoreStrings().</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>chars</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>placeholderPrefix</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getKeywordsForRegex"></a>
+                        <div class="element clickable method protected  method_getKeywordsForRegex" data-toggle="collapse" data-target=".method_getKeywordsForRegex .collapse">
+                            <h2>We&#039;ll strip whitespace around certain keywords with regular expressions.</h2>
+                            <pre>getKeywordsForRegex(string[]keywords, stringdelimiter = &#039;/&#039;) : string[]</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This will prepare the given array by escaping all characters.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>keywords</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string[]</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>delimiter</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string[]</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getOperatorsForRegex"></a>
+                        <div class="element clickable method protected  method_getOperatorsForRegex" data-toggle="collapse" data-target=".method_getOperatorsForRegex .collapse">
+                            <h2>We&#039;ll strip whitespace around certain operators with regular expressions.</h2>
+                            <pre>getOperatorsForRegex(string[]operators, stringdelimiter = &#039;/&#039;) : string[]</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This will prepare the given array by escaping all characters.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>operators</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string[]</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>delimiter</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string[]</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_gzip"></a>
+                        <div class="element clickable method public  method_gzip inherited" data-toggle="collapse" data-target=".method_gzip .collapse">
+                            <h2>Minify &amp; gzip the data &amp; (optionally) saves it to a file.</h2>
+                            <pre>gzip(mixedpath = null, mixedlevel = 9) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>path</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>level</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The minified &amp; gzipped data</p>
+</p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_load"></a>
+                        <div class="element clickable method protected  method_load inherited" data-toggle="collapse" data-target=".method_load .collapse">
+                            <h2>Load data.</h2>
+                            <pre>load(stringdata) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>data</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>Either a path to a file or the content itself</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_minify"></a>
+                        <div class="element clickable method public  method_minify inherited" data-toggle="collapse" data-target=".method_minify .collapse">
+                            <h2>Minify the data &amp; (optionally) saves it to a file.</h2>
+                            <pre>minify(mixedpath = null) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>path</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The minified data</p>
+</p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_openFileForWriting"></a>
+                        <div class="element clickable method protected  method_openFileForWriting inherited" data-toggle="collapse" data-target=".method_openFileForWriting .collapse">
+                            <h2>Attempts to open file specified by $path for writing.</h2>
+                            <pre>openFileForWriting(stringpath) : resource</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\MatthiasMullie\Minify\Exceptions\IOException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>path</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The path to the file</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+resource</code><p><p>Specifier for the target file</p>
+</p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_propertyNotation"></a>
+                        <div class="element clickable method protected  method_propertyNotation" data-toggle="collapse" data-target=".method_propertyNotation .collapse">
+                            <h2>Replaces all occurrences of array[&#039;key&#039;] by array.key.</h2>
+                            <pre>propertyNotation(stringcontent) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>content</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_registerPattern"></a>
+                        <div class="element clickable method protected  method_registerPattern inherited" data-toggle="collapse" data-target=".method_registerPattern .collapse">
+                            <h2>Register a pattern to execute against the source content.</h2>
+                            <pre>registerPattern(stringpattern, string|callablereplacement = &#039;&#039;) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If $replacement is a string, it must be plain text. Placeholders like $1 or \2 don't work.
+If you need that functionality, use a callback instead.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>pattern</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>PCRE pattern</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>replacement</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string|callable</code><p><p>Replacement value for matched pattern</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_replace"></a>
+                        <div class="element clickable method protected  method_replace inherited" data-toggle="collapse" data-target=".method_replace .collapse">
+                            <h2>We can&#039;t &quot;just&quot; run some regular expressions against JavaScript: it&#039;s a
+complex language. E.g. having an occurrence of // xyz would be a comment,
+unless it&#039;s used within a string. Of you could have something that looks
+like a &#039;string&#039;, but inside a comment.</h2>
+                            <pre>replace(stringcontent) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The only way to accurately replace these pieces is to traverse the JS one
+character at a time and try to find whatever starts first.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>content</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The content to replace patterns in</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The (manipulated) content</p>
+</p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_restoreExtractedData"></a>
+                        <div class="element clickable method protected  method_restoreExtractedData inherited" data-toggle="collapse" data-target=".method_restoreExtractedData .collapse">
+                            <h2>This method will restore all extracted data (strings, regexes) that were
+replaced with placeholder text in extract*(). The original content was
+saved in $this-&gt;extracted.</h2>
+                            <pre>restoreExtractedData(stringcontent) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>content</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_save"></a>
+                        <div class="element clickable method protected  method_save inherited" data-toggle="collapse" data-target=".method_save .collapse">
+                            <h2>Save to file.</h2>
+                            <pre>save(stringcontent, stringpath) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\MatthiasMullie\Minify\Exceptions\IOException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>content</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The minified data</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>path</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The path to save the minified data to</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_shortenBools"></a>
+                        <div class="element clickable method protected  method_shortenBools" data-toggle="collapse" data-target=".method_shortenBools .collapse">
+                            <h2>Replaces true &amp; false by !0 and !1.</h2>
+                            <pre>shortenBools(stringcontent) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>content</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_str_replace_first"></a>
+                        <div class="element clickable method protected  method_str_replace_first inherited" data-toggle="collapse" data-target=".method_str_replace_first .collapse">
+                            <h2>str_replace_first</h2>
+                            <pre>str_replace_first(mixedsearch, mixedreplace, mixedsubject) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>search</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>replace</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>subject</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_stripComments"></a>
+                        <div class="element clickable method protected  method_stripComments" data-toggle="collapse" data-target=".method_stripComments .collapse">
+                            <h2>Strip comments from source code.</h2>
+                            <pre>stripComments() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_stripMultilineComments"></a>
+                        <div class="element clickable method protected  method_stripMultilineComments inherited" data-toggle="collapse" data-target=".method_stripMultilineComments .collapse">
+                            <h2>Both JS and CSS use the same form of multi-line comment, so putting the common code here.</h2>
+                            <pre>stripMultilineComments() : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_stripWhitespace"></a>
+                        <div class="element clickable method protected  method_stripWhitespace" data-toggle="collapse" data-target=".method_stripWhitespace .collapse">
+                            <h2>Strip whitespace.</h2>
+                            <pre>stripWhitespace(stringcontent) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>We won't strip <em>all</em> whitespace, but as much as possible. The thing that
+we'll preserve are newlines we're unsure about.
+JavaScript doesn't require statements to be terminated with a semicolon.
+It will automatically fix missing semicolons with ASI (automatic semi-
+colon insertion) at the end of line causing errors (without semicolon.)</p>
+<p>Because it's sometimes hard to tell if a newline is part of a statement
+that should be terminated or not, we'll just leave some of them alone.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>content</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The content to strip the whitespace for</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_writeToFile"></a>
+                        <div class="element clickable method protected  method_writeToFile inherited" data-toggle="collapse" data-target=".method_writeToFile .collapse">
+                            <h2>Attempts to write $content to the file specified by $handler. $path is used for printing exceptions.</h2>
+                            <pre>writeToFile(resourcehandler, stringcontent, stringpath = &#039;&#039;) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                <th>Throws</th>
+                                                <td>
+                                                    <dl>
+                                                                                                            <dt>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+\MatthiasMullie\Minify\Exceptions\IOException</dt>
+                                                        <dd></dd>
+                                                                                                                                                            </dl>
+                                                </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>handler</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+resource</code><p><p>The resource to write to</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>content</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The content to write</p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>path</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p><p>The path to the file (for exception printing only)</p>
+</p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_data"> </a>
+                            <div class="element clickable property  protected property_data inherited" data-toggle="collapse" data-target=".property_data .collapse">
+                                <h2>The data to be minified.</h2>
+                                <pre>data : string[]</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;string|int, string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_patterns"> </a>
+                            <div class="element clickable property  protected property_patterns inherited" data-toggle="collapse" data-target=".property_patterns .collapse">
+                                <h2>Array of patterns to match.</h2>
+                                <pre>patterns : string[]</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;string|int, string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_keywordsReserved"> </a>
+                            <div class="element clickable property  protected property_keywordsReserved" data-toggle="collapse" data-target=".property_keywordsReserved .collapse">
+                                <h2>Full list of JavaScript reserved words.</h2>
+                                <pre>keywordsReserved : string[]</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Will be loaded from /data/js/keywords_reserved.txt.</p>
+</div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        see
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;string|int, string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_keywordsBefore"> </a>
+                            <div class="element clickable property  protected property_keywordsBefore" data-toggle="collapse" data-target=".property_keywordsBefore .collapse">
+                                <h2>List of JavaScript reserved words that accept a &lt;variable, value, ...&gt;
+after them. Some end of lines are not the end of a statement, like with
+these keywords.</h2>
+                                <pre>keywordsBefore : string[]</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>E.g.: we shouldn't insert a ; after this else
+else
+console.log('this is quite fine')</p>
+<p>Will be loaded from /data/js/keywords_before.txt</p>
+</div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;string|int, string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_keywordsAfter"> </a>
+                            <div class="element clickable property  protected property_keywordsAfter" data-toggle="collapse" data-target=".property_keywordsAfter .collapse">
+                                <h2>List of JavaScript reserved words that accept a &lt;variable, value, ...&gt;
+before them. Some end of lines are not the end of a statement, like when
+continued by one of these keywords on the newline.</h2>
+                                <pre>keywordsAfter : string[]</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>E.g.: we shouldn't insert a ; before this instanceof
+variable
+instanceof String</p>
+<p>Will be loaded from /data/js/keywords_after.txt</p>
+</div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;string|int, string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_operators"> </a>
+                            <div class="element clickable property  protected property_operators" data-toggle="collapse" data-target=".property_operators .collapse">
+                                <h2>List of all JavaScript operators.</h2>
+                                <pre>operators : string[]</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Will be loaded from /data/js/operators.txt</p>
+</div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        see
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;string|int, string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_operatorsBefore"> </a>
+                            <div class="element clickable property  protected property_operatorsBefore" data-toggle="collapse" data-target=".property_operatorsBefore .collapse">
+                                <h2>List of JavaScript operators that accept a &lt;variable, value, ...&gt; after
+them. Some end of lines are not the end of a statement, like with these
+operators.</h2>
+                                <pre>operatorsBefore : string[]</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Note: Most operators are fine, we've only removed ++ and --.
+++ &amp; -- have to be joined with the value they're in-/decrementing.</p>
+<p>Will be loaded from /data/js/operators_before.txt</p>
+</div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        see
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;string|int, string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_operatorsAfter"> </a>
+                            <div class="element clickable property  protected property_operatorsAfter" data-toggle="collapse" data-target=".property_operatorsAfter .collapse">
+                                <h2>List of JavaScript operators that accept a &lt;variable, value, ...&gt; before
+them. Some end of lines are not the end of a statement, like when
+continued by one of these operators on the newline.</h2>
+                                <pre>operatorsAfter : string[]</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Note: Most operators are fine, we've only removed ), ], ++, --, ! and ~.
+There can't be a newline separating ! or ~ and whatever it is negating.
+++ &amp; -- have to be joined with the value they're in-/decrementing.
+) &amp; ] are &quot;special&quot; in that they have lots or usecases. () for example
+is used for function calls, for grouping, in if () and for (), ...</p>
+<p>Will be loaded from /data/js/operators_after.txt</p>
+</div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        see
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;string|int, string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\MatthiasMullie\Minify\JS"></a>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="\MatthiasMullie\Minify">Minify</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="\MatthiasMullie\Minify\JS">JS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="https://getbootstrap.com/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="https://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="https://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Thu, 21 Nov 2024 01:33:23 +0000.<br/>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    SYSTEM - PHP Framework &raquo; \ScssPhp\ScssPhp\Tests\SassSpecTest
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+    <base href="../">
+
+            <link href="css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/template.js" type="text/javascript"></script>
+        <script src="js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="index.html">SYSTEM - PHP Framework</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="\LIB">LIB</a></li>
+                                                                        <li><a href="\GIT">GIT</a></li>
+                                                                        <li><a href="\vakata">vakata</a></li>
+                                                                        <li><a href="\Michelf">Michelf</a></li>
+                                                                        <li><a href="\MatthiasMullie">MatthiasMullie</a></li>
+                                                                        <li><a href="\PHPDocMD">PHPDocMD</a></li>
+                                                                        <li><a href="\ScssPhp">ScssPhp</a></li>
+                                                                        <li><a href="\SYSTEM">SYSTEM</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method public">
+        <a href="#method_provideTests" title="provideTests :: ">
+            <span class="description"></span><pre>provideTests</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                        <li class="method public">
+        <a href="#method_testTests" title="testTests :: ">
+            <span class="description"></span><pre>testTests</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                            <li class="method protected">
+                            <a href="#method_appendToExclusionList" title="appendToExclusionList :: Append a test name to the list of excluded tests">
+                                <span class="description">Append a test name to the list of excluded tests</span><pre>appendToExclusionList</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_appendToWarningExclusionList" title="appendToWarningExclusionList :: Append a test name to the list of excluded tests">
+                                <span class="description">Append a test name to the list of excluded tests</span><pre>appendToWarningExclusionList</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_canonicalTestName" title="canonicalTestName :: Remove order/total. prefix from testName">
+                                <span class="description">Remove order/total. prefix from testName</span><pre>canonicalTestName</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_checkCssEqual" title="checkCssEqual :: Check if two CSS outputs are equivalent
+ie equals (or differing only by quotes if $disallowQuoteDifference=false)">
+                                <span class="description">Check if two CSS outputs are equivalent
+ie equals (or differing only by quotes if $disallowQuoteDifference=false)</span><pre>checkCssEqual</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_cleanDirection" title="cleanDirection :: ">
+                                <span class="description"></span><pre>cleanDirection</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_getExclusionList" title="getExclusionList :: List of excluded tests if not in TEST_SASS_SPEC mode">
+                                <span class="description">List of excluded tests if not in TEST_SASS_SPEC mode</span><pre>getExclusionList</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_getWarningExclusionList" title="getWarningExclusionList :: List of tests excluding the assertion on warnings if not in TEST_SASS_SPEC mode">
+                                <span class="description">List of tests excluding the assertion on warnings if not in TEST_SASS_SPEC mode</span><pre>getWarningExclusionList</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_matchExclusionList" title="matchExclusionList :: Check the presence of a test in an exclusion list">
+                                <span class="description">Check the presence of a test in an exclusion list</span><pre>matchExclusionList</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_normalizeCssOutput" title="normalizeCssOutput :: Do some normalization on css output, for comparison purpose">
+                                <span class="description">Do some normalization on css output, for comparison purpose</span><pre>normalizeCssOutput</pre>
+                            </a>
+                        </li>
+                                                                                                                                                        <li class="method protected">
+                            <a href="#method_reformatOutput" title="reformatOutput :: ">
+                                <span class="description"></span><pre>reformatOutput</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method protected">
+                            <a href="#method_resetExclusionList" title="resetExclusionList :: RAZ the file that lists excluded tests">
+                                <span class="description">RAZ the file that lists excluded tests</span><pre>resetExclusionList</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected">
+                            <a href="#method_sassSpecDir" title="sassSpecDir :: ">
+                                <span class="description"></span><pre>sassSpecDir</pre>
+                            </a>
+                        </li>
+                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private">
+                            <a href="#method_prepareWarning" title="prepareWarning :: ">
+                                <span class="description"></span><pre>prepareWarning</pre>
+                            </a>
+                        </li>
+                                                                                                                                                        <li class="method private">
+                            <a href="#method_removeDirectory" title="removeDirectory :: ">
+                                <span class="description"></span><pre>removeDirectory</pre>
+                            </a>
+                        </li>
+                                                                                                                                                            </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>SassSpecTest</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <abbr title="\PHPUnit\Framework\TestCase">TestCase</abbr>
+                                                        </small>
+                <p class="short_description">Sass Spec Test - extracts tests from https://github.com/sass/sass-spec</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Cerdic <a href="mailto:cedric@yterium.com">cedric@yterium.com</a></p>
+
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Application</p>
+
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_appendToExclusionList"></a>
+                        <div class="element clickable method protected  method_appendToExclusionList" data-toggle="collapse" data-target=".method_appendToExclusionList .collapse">
+                            <h2>Append a test name to the list of excluded tests</h2>
+                            <pre>appendToExclusionList(mixedtestName) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>testName</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_appendToWarningExclusionList"></a>
+                        <div class="element clickable method protected  method_appendToWarningExclusionList" data-toggle="collapse" data-target=".method_appendToWarningExclusionList .collapse">
+                            <h2>Append a test name to the list of excluded tests</h2>
+                            <pre>appendToWarningExclusionList(mixedtestName) : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>testName</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_canonicalTestName"></a>
+                        <div class="element clickable method protected  method_canonicalTestName" data-toggle="collapse" data-target=".method_canonicalTestName .collapse">
+                            <h2>Remove order/total. prefix from testName</h2>
+                            <pre>canonicalTestName(mixedtestName) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>testName</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_checkCssEqual"></a>
+                        <div class="element clickable method protected  method_checkCssEqual" data-toggle="collapse" data-target=".method_checkCssEqual .collapse">
+                            <h2>Check if two CSS outputs are equivalent
+ie equals (or differing only by quotes if $disallowQuoteDifference=false)</h2>
+                            <pre>checkCssEqual(string&computed, stringspec, booldisallowQuoteDifference = false) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>computed</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>spec</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>disallowQuoteDifference</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+bool</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+bool</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_cleanDirection"></a>
+                        <div class="element clickable method protected  method_cleanDirection" data-toggle="collapse" data-target=".method_cleanDirection .collapse">
+                            <h2>cleanDirection</h2>
+                            <pre>cleanDirection() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    after
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getExclusionList"></a>
+                        <div class="element clickable method protected  method_getExclusionList" data-toggle="collapse" data-target=".method_getExclusionList .collapse">
+                            <h2>List of excluded tests if not in TEST_SASS_SPEC mode</h2>
+                            <pre>getExclusionList() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getWarningExclusionList"></a>
+                        <div class="element clickable method protected  method_getWarningExclusionList" data-toggle="collapse" data-target=".method_getWarningExclusionList .collapse">
+                            <h2>List of tests excluding the assertion on warnings if not in TEST_SASS_SPEC mode</h2>
+                            <pre>getWarningExclusionList() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_matchExclusionList"></a>
+                        <div class="element clickable method protected  method_matchExclusionList" data-toggle="collapse" data-target=".method_matchExclusionList .collapse">
+                            <h2>Check the presence of a test in an exclusion list</h2>
+                            <pre>matchExclusionList(mixedtestName, mixedexclusionList) : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>testName</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>exclusionList</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+bool</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_normalizeCssOutput"></a>
+                        <div class="element clickable method protected  method_normalizeCssOutput" data-toggle="collapse" data-target=".method_normalizeCssOutput .collapse">
+                            <h2>Do some normalization on css output, for comparison purpose</h2>
+                            <pre>normalizeCssOutput(stringcss) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>css</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+string</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_prepareWarning"></a>
+                        <div class="element clickable method private  method_prepareWarning" data-toggle="collapse" data-target=".method_prepareWarning .collapse">
+                            <h2>prepareWarning</h2>
+                            <pre>prepareWarning(mixedwarning, mixedbaseTestName, mixedbaseDir) : mixed</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>warning</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>baseTestName</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>baseDir</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_provideTests"></a>
+                        <div class="element clickable method public  method_provideTests" data-toggle="collapse" data-target=".method_provideTests .collapse">
+                            <h2>provideTests</h2>
+                            <pre>provideTests() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_reformatOutput"></a>
+                        <div class="element clickable method protected  method_reformatOutput" data-toggle="collapse" data-target=".method_reformatOutput .collapse">
+                            <h2>reformatOutput</h2>
+                            <pre>reformatOutput(mixedcss) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>css</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_removeDirectory"></a>
+                        <div class="element clickable method private  method_removeDirectory" data-toggle="collapse" data-target=".method_removeDirectory .collapse">
+                            <h2>removeDirectory</h2>
+                            <pre>removeDirectory(mixeddir) : mixed</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>dir</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_resetExclusionList"></a>
+                        <div class="element clickable method protected  method_resetExclusionList" data-toggle="collapse" data-target=".method_resetExclusionList .collapse">
+                            <h2>RAZ the file that lists excluded tests</h2>
+                            <pre>resetExclusionList() : array</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_sassSpecDir"></a>
+                        <div class="element clickable method protected  method_sassSpecDir" data-toggle="collapse" data-target=".method_sassSpecDir .collapse">
+                            <h2>sassSpecDir</h2>
+                            <pre>sassSpecDir() : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_testTests"></a>
+                        <div class="element clickable method public  method_testTests" data-toggle="collapse" data-target=".method_testTests .collapse">
+                            <h2>testTests</h2>
+                            <pre>testTests(mixedname, mixedinput, mixedoutput) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    dataProvider
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>provideTests</p>
+
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>name</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>input</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>output</h4>
+                                                <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                            </div>
+                                                                            
+                                    
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+                                        <h3>Response</h3>
+                                        <code>
+Deprecated: Please use getType in phar:///app/lib/system/lib/phpdocumentor/lib/phpDocumentor.phar/src/phpDocumentor/Descriptor/Traits/CanHaveAType.php on line 50
+mixed</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_exclusionList"> </a>
+                            <div class="element clickable property  private property_exclusionList" data-toggle="collapse" data-target=".property_exclusionList .collapse">
+                                <h2>exclusionList</h2>
+                                <pre>exclusionList : </pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_warningExclusionList"> </a>
+                            <div class="element clickable property  private property_warningExclusionList" data-toggle="collapse" data-target=".property_warningExclusionList .collapse">
+                                <h2>warningExclusionList</h2>
+                                <pre>warningExclusionList : </pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fileExclusionList"> </a>
+                            <div class="element clickable property  private property_fileExclusionList" data-toggle="collapse" data-target=".property_fileExclusionList .collapse">
+                                <h2>fileExclusionList</h2>
+                                <pre>fileExclusionList : </pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fileWarningExclusionList"> </a>
+                            <div class="element clickable property  private property_fileWarningExclusionList" data-toggle="collapse" data-target=".property_fileWarningExclusionList .collapse">
+                                <h2>fileWarningExclusionList</h2>
+                                <pre>fileWarningExclusionList : </pre>
+                                <div class="labels">
+                                                                        <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dirToClean"> </a>
+                            <div class="element clickable property  private property_dirToClean" data-toggle="collapse" data-target=".property_dirToClean .collapse">
+                                <h2>dirToClean</h2>
+                                <pre>dirToClean : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\ScssPhp\ScssPhp\Tests\SassSpecTest"></a>
+            <ul class="breadcrumb">
+                <li><a href="index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="\ScssPhp\ScssPhp\Tests">Tests</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="\ScssPhp\ScssPhp\Tests\SassSpecTest">SassSpecTest</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="https://getbootstrap.com/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="https://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="https://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Thu, 21 Nov 2024 01:33:24 +0000.<br/>
+    </footer>
+    </body>
+</html>
